@@ -318,6 +318,16 @@
       backface-visibility: hidden;
     }
 
+    /* ===== תיקון דהייה במובייל (רק לוגו + כריכה) ===== */
+    @media (max-width: 980px){
+      .logo,
+      .coverWrap img{
+        opacity: 1 !important;
+        filter: saturate(1.18) contrast(1.10) !important;
+        -webkit-filter: saturate(1.18) contrast(1.10) !important;
+      }
+    }
+
     /* ===== מובייל: מרכזים לוגו+טקסט וכפתור וואטסאפ במרכז ===== */
     @media (max-width: 980px){
       .hero{grid-template-columns:1fr; gap:14px}
